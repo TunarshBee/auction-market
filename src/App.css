@@ -27,3 +27,7 @@
 [type="search"]{
   width: 20%;
 }
+.items{
+  background-color: gray;
+  padding: .7%;
+}

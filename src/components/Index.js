@@ -2,9 +2,12 @@ import React, { Component } from 'react'
 import About from './About'
 import Home from './Home'
 import Items from './Items'
-import Apsp from './LifeCycle'
 import Pick from './Pick'
+import ComputerAssessories from './ComputerAssessories'
 import Services from './Services'
+import Fashion from './Fashion'
+import PhonesAndTablets from './PhonesAndTablets'
+import Games from './Games'
 
 
 export class Index extends Component {
@@ -24,7 +27,10 @@ export class Index extends Component {
                         <input type="submit" placeholder="Search "/>
                     </form>
                 </nav>
-                <Apsp />
+                    <ComputerAssessories/>
+                    <PhonesAndTablets/>
+                    <Fashion/>
+                    <Games/>
             </div>
         )
     }
