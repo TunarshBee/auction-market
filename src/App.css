@@ -87,6 +87,11 @@ body{
 }
 .itemsDesc > .images > img{
   width: 250px;
-  height: 250px;
+  height: 180px;
   margin: 1%;
+}
+.filter{
+  background-color: #333;
+  width: 100%;
+  padding: 5%;
 }

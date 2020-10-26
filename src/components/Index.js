@@ -9,8 +9,10 @@ import ComputerAssessories from "./ComputerAccessories";
 import Services from "./Services";
 import Fashion from "./Fashion";
 import PhonesAndTablets from "./PhonesAndTablets";
+import HomeAppliances from "./HomeAppliances";
 import Games from "./Games";
 import Carousel from "./Carousel";
+import Filter from "./Filter";
 
 export class Index extends Component {
   render() {
@@ -64,7 +66,7 @@ export class Index extends Component {
             </div>
             <div className="items">
               {" "}
-              <ComputerAssessories />
+              <HomeAppliances />
             </div>
             <div className="items">
               {" "}
@@ -83,29 +85,73 @@ export class Index extends Component {
           <div className="itemsDesc">
             <div className="itemDiv">
               <ComputerAssessories />
-              
+
             </div>
             <p className="images">
+                <img src="mouse/cc.jpg" />
+                <img src="mouse/j.jpg" />
+                <img src="mouse/a.jpg" />
+                <img src="mouse/k.jpg" />
                 <img src="mouse/1.jpg" />
-                <img src="mouse/2.jpg" />
-                <img src="mouse/3.jpg" />
-                <img src="mouse/4.jpg" />
-                <img src="mouse/5.jpg" />
-                <img src="mouse/6.jpg" />
-                <img src="mouse/7.jpg" />
-                <img src="mouse/8.jpg" />
+                <img src="mouse/e.jpg" />
+                <img src="mouse/b.jpg" />
+                <img src="mouse/i.jpg" />
+            </p>
+            <div className="itemDiv">
+              <HomeAppliances />
+            </div>
+             <p className="images">
+                <img src="home/1.jpg" />
+                <img src="home/2.jpg" />
+                <img src="home/3.jpg" />
+                <img src="home/4.jpg" />
+                <img src="home/5.jpg" />
+                <img src="home/6.jpg" />
+                <img src="home/7.jpg" />
+                <img src="home/8.jpg" />
             </p>
             <div className="itemDiv">
               <PhonesAndTablets />
             </div>
+             <p className="images">
+                <img src="phone/1.jpg" />
+                <img src="phone/2.jpg" />
+                <img src="phone/3.jpg" />
+                <img src="phone/4.jpg" />
+                <img src="phone/5.jpg" />
+                <img src="phone/6.jpg" />
+                <img src="phone/7.jpg" />
+                <img src="phone/8.jpg" />
+            </p>
             <div className="itemDiv">
               <Fashion />
             </div>
+             <p className="images">
+                <img src="fashion/1.jpg" />
+                <img src="fashion/2.jpg" />
+                <img src="fashion/3.jpg" />
+                <img src="fashion/4.jpg" />
+                <img src="fashion/5.jpg" />
+                <img src="fashion/6.jpg" />
+                <img src="fashion/7.jpg" />
+                <img src="fashion/8.jpg" />
+            </p>
             <div className="itemDiv">
               <Games />
             </div>
+             <p className="images">
+                <img src="gaming/1.jpg" />
+                <img src="gaming/2.jpg" />
+                <img src="gaming/3.jpg" />
+                <img src="gaming/4.jpg" />
+                <img src="gaming/5.jpg" />
+                <img src="gaming/6.jpg" />
+                <img src="gaming/7.jpg" />
+                <img src="gaming/8.jpg" />
+            </p>
           </div>
         </div>
+        <Filter/>
       </Router>
     );
   }
