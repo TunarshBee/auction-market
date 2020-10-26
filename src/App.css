@@ -1,6 +1,15 @@
 *{
   outline: none;
   box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+body{
+  background-image: url("erika-fletcher-U58c9bl87JA-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .App {
   /* text-align: center; */
@@ -11,26 +20,29 @@
 }
 .list-item{
   list-style-type: none;
-  padding: 0 0 0 5%;
+  padding: 4.5% 0 0 5%;
 }
 .nav{
   display: inline-block;
   clear: both;
   width: 100%;
   height: 1%;
-  background-color: rgb(255, 127, 8);
+  padding:0% 2% 1% 2%;
+  border-bottom: 1px solid white;
+  background-color: transparent;
 }
-[type="search"],[type="submit"]{
-  padding: 0.5%;
+[type="search"],[type="submit"],  select{
+  padding: .3%;
   border-radius: 7px;
-  
 }
 [type="search"]{
   width: 20%;
 }
 .items{
-  background-color: rgb(255, 127, 8);
-  padding: .7%;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  /* border-radius: 30px; */
+  margin: 7% 2%;
+  padding: 0% 4%;
 }
 .caro{
   width: 80%;
@@ -45,16 +57,36 @@
 }
 .itemStyle{
   color: white;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background-color: transparent;
   font-size: 12px;
   clear: both;
   margin-top: 1.7%;
   margin-left: 5%;
   width: 20%;
   display: inline-block;
+  padding: .7%;
 }
 .style{
   display: block;
 }
-.style1{
-  color: aliceblue;
+.itemDiv{
+  padding:0% 2%;
+  margin: 1% 0%;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  background: transparent;
+  border-bottom: 2px solid #fff;
+  border-top: 1px solid #fff;
+  height: 50px;
+}
+.itemsDesc > .images{
+  padding-left: 2%;
+}
+.itemsDesc > .images > img{
+  width: 250px;
+  height: 250px;
+  margin: 1%;
 }

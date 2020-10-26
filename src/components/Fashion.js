@@ -4,7 +4,7 @@ export class Fashion extends Component {
     render() {
         return (
             <div>
-                <h2 className="items">Fashion</h2>
+                <h2>Fashion</h2>
             </div>
         )
     }

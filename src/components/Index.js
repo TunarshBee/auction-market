@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import { Route, Link, BrowserRouter as Router } from "react-router-dom";
 import ReactDom from "react-dom";
 import About from "./About";
 import Home from "./Home";
 import Items from "./Items";
 import Pick from "./Pick";
-import ComputerAssessories from "./ComputerAssessories";
+import ComputerAssessories from "./ComputerAccessories";
 import Services from "./Services";
 import Fashion from "./Fashion";
 import PhonesAndTablets from "./PhonesAndTablets";
@@ -14,53 +15,98 @@ import Carousel from "./Carousel";
 export class Index extends Component {
   render() {
     return (
-      <React.Fragment>
-        <nav className="nav">
-          <ul className="list" style={thisStyle}>
-            <li className="list-item">
+      <Router>
+        <div>
+          <nav className="nav">
+            <ul className="list" style={thisStyle}>
+              <li className="list-item">
+                {" "}
+                <Home />{" "}
+              </li>
+              <li className="list-item">
+                {" "}
+                <Items />{" "}
+              </li>
+              <li className="list-item">
+                {" "}
+                <Services />{" "}
+              </li>
+              <li className="list-item">
+                {" "}
+                <About />
+              </li>
+              <li className="list-item">
+                {" "}
+                <Pick />
+              </li>
+            </ul>
+            <form style={formStyle}>
+              <input type="search" placeholder="Search Your Favorite" />
+              <input type="submit" placeholder="Search " />
+            </form>
+          </nav>
+          <div className="itemStyle">
+            <div className="items">
               {" "}
-              <Home />{" "}
-            </li>
-            <li className="list-item">
+              <ComputerAssessories />
+            </div>
+            <div className="items">
               {" "}
-              <Items />{" "}
-            </li>
-            <li className="list-item">
+              <PhonesAndTablets />
+            </div>
+            <div className="items">
               {" "}
-              <Services />{" "}
-            </li>
-            <li className="list-item">
+              <Fashion />
+            </div>
+            <div className="items">
               {" "}
-              <About />
-            </li>
-            <li className="list-item">
+              <Games />
+            </div>
+            <div className="items">
               {" "}
-              <Pick />
-            </li>
-          </ul>
-          <form style={formStyle}>
-            <input type="search" placeholder="Search Your Favorite" />
-            <input type="submit" placeholder="Search " />
-          </form>
-        </nav>
-        <div className="itemStyle">
-          <ComputerAssessories className="style" />
-          <PhonesAndTablets className="style" />
-          <Fashion className="style" />
-          <Games className="style" />
-          {/* <ComputerAssessories className="style" />
-          <PhonesAndTablets className="style" /> */}
-          <Fashion className="style" />
-          <Games className="style" />
+              <ComputerAssessories />
+            </div>
+            <div className="items">
+              {" "}
+              <PhonesAndTablets />
+            </div>
+            <div className="items">
+              {" "}
+              <Fashion />
+            </div>
+            <div className="items">
+              {" "}
+              <Games />
+            </div>
+          </div>
+          <Carousel className="carousel" />
+          <div className="itemsDesc">
+            <div className="itemDiv">
+              <ComputerAssessories />
+              
+            </div>
+            <p className="images">
+                <img src="mouse/1.jpg" />
+                <img src="mouse/2.jpg" />
+                <img src="mouse/3.jpg" />
+                <img src="mouse/4.jpg" />
+                <img src="mouse/5.jpg" />
+                <img src="mouse/6.jpg" />
+                <img src="mouse/7.jpg" />
+                <img src="mouse/8.jpg" />
+            </p>
+            <div className="itemDiv">
+              <PhonesAndTablets />
+            </div>
+            <div className="itemDiv">
+              <Fashion />
+            </div>
+            <div className="itemDiv">
+              <Games />
+            </div>
+          </div>
         </div>
-        <Carousel className="carousel" />
-        <div style={style1Frag}>
-            <ComputerAssessories className="style1" />
-            <PhonesAndTablets className="style1" />
-            <Fashion className="style1" />
-            <Games className="style1" />
-        </div>
-      </React.Fragment>
+      </Router>
     );
   }
 }
@@ -74,8 +120,5 @@ const formStyle = {
   // clear:"both",
   marginTop: "1%",
 };
-const style1Frag={
-    color:"#fff",
-}
 
 export default Index;
