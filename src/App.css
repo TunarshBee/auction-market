@@ -1,8 +1,10 @@
 *{
   outline: none;
+  font-weight: lighter;
   box-sizing: border-box;
   padding: 0%;
   margin: 0%;
+  font-family: sans-serif;
 }
 
 body{
@@ -11,8 +13,10 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
-.App {
+.item {
   /* text-align: center; */
+  margin: 7% 2% 2% 2%;
+  padding: 0% 4%  2% 4%;
 }
 [href = "#"]{
   color: rgb(255, 255, 255);
@@ -59,6 +63,7 @@ body{
   color: white;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 10px;
+  box-shadow:2px 7px 8px rgba(0, 0, 0, .5);
   background-color: transparent;
   font-size: 12px;
   clear: both;
@@ -90,8 +95,98 @@ body{
   height: 180px;
   margin: 1%;
 }
-.filter{
+.footer{
   background-color: #333;
   width: 100%;
   padding: 5%;
+}
+.form{
+  display: inline;
+  width: 100%;
+}
+.loginForm{
+  width: 25%;
+  margin: auto;
+  margin-top: 5%;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 2% 0;
+  transition: linear .5s all;
+  border-radius: 10px;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, .5) ;
+}
+.loginForm:hover{
+  width: 30%;
+}
+.loginForm h1{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 7%;
+}
+.loginForm h3{
+  margin-left: 10%;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+[type="email"],[type="password"],[type="text"]{
+  padding: 1%;
+  width: 80%;
+  outline: none;
+  border: none;
+  transition: ease-in-out 500ms all ;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  display: block;
+  color: #fff;
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+.loginForm [type="submit"],.signUp [type="submit"]{
+  margin-left: 10%;
+  width: 30%;
+  outline: none;
+  border: 1px solid #fff;
+  background-color: transparent;
+  display: block;
+  color: #fff;
+  margin: auto;
+  transition: all .5s linear;
+  text-align: center;
+}
+[type="submit"]:hover{
+  background-color: rgba(0, 0, 255, 0.8);
+}
+.loginForm>a,.signUp>a{
+  text-decoration: none;
+  color: #fff;
+  margin: 15%;
+}
+.or{
+  color: #fff;
+  margin: 2% 0%;
+}
+.signUp{
+  margin: auto;
+  width:25%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 3% 0;
+  border-radius: 10px;
+  transition: linear .5s all;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, .5) ;
+}
+.signUp:hover{
+  width: 30%;
+}
+.signUp h1{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 7%;
+}
+.signUp h3{
+  margin-left: 9%;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

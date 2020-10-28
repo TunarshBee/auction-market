@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-export class Services extends Component {
+export class Sporting extends Component {
     render() {
         return (
             <div>
-                  <a href="#" target="_blank">Services</a>
+                <h2>Sporting things</h2>
             </div>
         )
     }
 }
 
-export default Services
+export default Sporting

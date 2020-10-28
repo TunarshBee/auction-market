@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-export class Filter extends Component {
+export class Automobiles extends Component {
     render() {
         return (
-            <div className="filter">
+            <div>
                 
             </div>
         )
     }
 }
 
-export default Filter
+export default Automobiles

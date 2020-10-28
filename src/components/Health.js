@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-export class Fashion extends Component {
+export class Health extends Component {
     render() {
         return (
             <div>
-                <h2>Fashion & Clothes</h2>
+                <h2>Health</h2>
             </div>
         )
     }
 }
 
-export default Fashion
+export default Health
