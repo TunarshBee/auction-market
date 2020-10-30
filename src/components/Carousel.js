@@ -24,7 +24,7 @@ class Slider extends Component {
       <Carousel  style={caro}>
           {items.map((item) => (
             <div key={item.id}>
-              <img src={item.image} style={imgStyle} className="caroImg" />{" "}
+              <img src={item.image} style={imgStyle} className="caroImg" alt="caro" />{" "}
             </div>
           ))}
       </Carousel>

@@ -65,7 +65,7 @@ body{
   border-radius: 10px;
   box-shadow:2px 7px 8px rgba(0, 0, 0, .5);
   background-color: transparent;
-  font-size: 12px;
+  /* font-size: 12px; */
   clear: both;
   margin-top: 1.7%;
   margin-left: 5%;
@@ -87,10 +87,10 @@ body{
   border-top: 1px solid #fff;
   height: 50px;
 }
-.itemsDesc > .images{
+ .images{
   padding-left: 2%;
 }
-.itemsDesc > .images > img{
+ .images > img{
   width: 250px;
   height: 180px;
   margin: 1%;
@@ -99,6 +99,7 @@ body{
   background-color: #333;
   width: 100%;
   padding: 5%;
+  margin-top: 1%;
 }
 .form{
   display: inline;
@@ -107,15 +108,18 @@ body{
 .loginForm{
   width: 25%;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 2%;
+  margin-bottom:3%;
+  font-size: 12px;
   background-color: rgba(0, 0, 0, .5);
   padding: 2% 0;
   transition: linear .5s all;
   border-radius: 10px;
-  box-shadow: 5px 10px 5px rgba(0, 0, 0, .5) ;
+  box-shadow: 2px 5px 2px rgba(0, 0, 0, .5) ;
 }
 .loginForm:hover{
-  width: 30%;
+  box-shadow: 10px 15px 10px rgba(0, 0, 0, .5) ;
+  width: 25.2%;
 }
 .loginForm h1{
   text-align: center;
@@ -132,6 +136,7 @@ body{
   width: 80%;
   outline: none;
   border: none;
+  font-size: 10px;
   transition: ease-in-out 500ms all ;
   border-bottom: 1px solid #fff;
   background-color: transparent;
@@ -141,24 +146,46 @@ body{
   margin-top: 1%;
   margin-bottom: 3%;
 }
+[type="email"]:focus ,[type="password"]:focus ,[type="text"]:focus{
+  border-bottom: 2px solid #fff;
+  width: 82%;
+  font-size: 12px;
+}
 .loginForm [type="submit"],.signUp [type="submit"]{
   margin-left: 10%;
   width: 30%;
   outline: none;
   border: 1px solid #fff;
-  background-color: transparent;
   display: block;
   color: #fff;
   margin: auto;
+  background-color: transparent;
   transition: all .5s linear;
   text-align: center;
 }
-[type="submit"]:hover{
-  background-color: rgba(0, 0, 255, 0.8);
+[type="submit"]{
+  outline: none;
+  /* background-color: transparent; */
+  transition: all .5s linear;
+  outline: none;
+  /* color: #fff; */
+  box-shadow: 2px 5px 2px rgba(0, 0, 0, .5) ;
 }
-.loginForm>a,.signUp>a{
+[type="submit"]:hover{
+  background-color: rgba(0, 0, 255, 0.2);
+  color: #fff;
+}
+.formLinks,.signUp>a{
   text-decoration: none;
   color: #fff;
+  font-size: 15px;
+  margin: 15%;
+  margin-bottom: 18%;
+}
+.signUp>a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
   margin: 15%;
 }
 .or{
@@ -168,17 +195,19 @@ body{
 .signUp{
   margin: auto;
   width:25%;
-  margin-top: 3%;
-  margin-bottom: 5%;
+  margin-top: 1%;
+  margin-bottom: 2%;
   color: #fff;
   background-color: rgba(0, 0, 0, .5);
   padding: 3% 0;
+  font-size: 12px;
   border-radius: 10px;
   transition: linear .5s all;
-  box-shadow: 5px 10px 5px rgba(0, 0, 0, .5) ;
+  box-shadow: 2px 5px 2px rgba(0, 0, 0, .5) ;
 }
 .signUp:hover{
-  width: 30%;
+  box-shadow: 7px 10px 7px rgba(0, 0, 0, .5) ;
+  width: 25.2%;
 }
 .signUp h1{
   text-align: center;
@@ -189,4 +218,7 @@ body{
   margin-left: 9%;
   color: #fff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.active{
+  color: red !important;
 }

@@ -14,19 +14,25 @@ export class Nav extends Component {
           <ul className="list" style={thisStyle}>
             <li className="list-item">
               {" "}
-              <NavLink style={navLinks} to="/">
+              <NavLink activeClassName="active" style={navLinks} exact to="/">
                 Home
               </NavLink>
             </li>
             <li className="list-item">
               {" "}
-              <NavLink style={navLinks} to="/Login">
+              <NavLink activeClassName="active" style={navLinks} to="/Login">
                 Login
               </NavLink>
             </li>
             <li className="list-item">
               {" "}
-              <NavLink style={navLinks} to="/About">
+              <NavLink activeClassName="active" style={navLinks} to="/Register">
+                Register
+              </NavLink>
+            </li>
+            <li className="list-item">
+              {" "}
+              <NavLink activeClassName="active" style={navLinks} to="/About">
                 About
               </NavLink>
             </li>
@@ -40,6 +46,12 @@ export class Nav extends Component {
     );
   }
 }
+const navLinks = {
+  textDecoration: "none",
+  fontSize: "17px",
+  listStyle: "none",
+  color: "#fff",
+};
 const thisStyle = {
   display: "flex",
   float: "right",
@@ -50,12 +62,6 @@ const formStyle = {
   margin: "auto",
   // clear:"both",
   marginTop: "1%",
-};
-const navLinks = {
-  textDecoration: "none",
-  color: "#fff",
-  fontSize: "18px",
-  listStyle: "none",
 };
 
 export default Nav;

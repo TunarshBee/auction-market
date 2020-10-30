@@ -19,6 +19,7 @@ import Footer from "./Footer";
 import Health from "./Health";
 import Electronics from "./Electronics";
 import Nav from "./Nav";
+import Register from "./Register";
 
 export class Index extends Component {
   render() {
@@ -34,25 +35,25 @@ export class Index extends Component {
                 <div className="itemStyle">
                   <div className="items">
                     {" "}
-                    <NavLink style={navLinks} to="/ComputerAccessories">
+                    <NavLink activeClassName="active" style={navLinks} to="/ComputerAccessories">
                       ComputerAccessories
                     </NavLink>
                   </div>
                   <div className="items">
                     {" "}
-                    <NavLink style={navLinks} to="/PhonesAndTablets">
+                    <NavLink activeClassName="active" style={navLinks} to="/PhonesAndTablets">
                       PhonesAndTablets
                     </NavLink>
                   </div>
                   <div className="items">
                     {" "}
-                    <NavLink style={navLinks} to="/Fashion">
+                    <NavLink activeClassName="active" style={navLinks} to="/Fashion">
                       Fashion
                     </NavLink>
                   </div>
                   <div className="items">
                     {" "}
-                    <NavLink style={navLinks} to="/Games">
+                    <NavLink activeClassName="active" style={navLinks} to="/Games">
                       Games
                     </NavLink>
                   </div>
@@ -70,13 +71,13 @@ export class Index extends Component {
                   </div>
                   <div className="items">
                     {" "}
-                    <NavLink style={navLinks} to="/Health">
+                    <NavLink activeClassName="active" style={navLinks} to="/Health">
                       Health
                     </NavLink>
                   </div>
                   <div className="item">
                     {" "}
-                    <NavLink style={navLinks} to="/Sporting">
+                    <NavLink activeClassName="active" style={navLinks} to="/Sporting">
                       Sporting
                     </NavLink>
                   </div>
@@ -84,7 +85,7 @@ export class Index extends Component {
                 <Carousel className="carousel" />
                 <div className="itemsDesc">
                   <div className="itemDiv">
-                    <ComputerAccessories />
+                    <h3>Computer Accessories</h3>
                   </div>
                   <p className="images">
                     <img src="mouse/cc.jpg" />
@@ -97,56 +98,56 @@ export class Index extends Component {
                     <img src="mouse/i.jpg" />
                   </p>
                   <div className="itemDiv">
-                    <HomeAppliances />
+                    <h3>Home Appliances</h3>
                   </div>
                   <p className="images">
-                    <img src="home/1.jpg" />
-                    <img src="home/2.jpg" />
-                    <img src="home/3.jpg" />
-                    <img src="home/4.jpg" />
-                    <img src="home/5.jpg" />
-                    <img src="home/6.jpg" />
-                    <img src="home/7.jpg" />
-                    <img src="home/8.jpg" />
+                    <img src="home/1.jpg" alt="" />
+                    <img src="home/2.jpg" alt="" />
+                    <img src="home/3.jpg" alt="" />
+                    <img src="home/4.jpg" alt="" />
+                    <img src="home/5.jpg" alt="" />
+                    <img src="home/6.jpg" alt="" />
+                    <img src="home/7.jpg" alt="" />
+                    <img src="home/8.jpg" alt="" />
                   </p>
                   <div className="itemDiv">
-                    <PhonesAndTablets />
+                    <h3>Phones and Tablets</h3>
                   </div>
                   <p className="images">
-                    <img src="phone/1.jpg" />
-                    <img src="phone/2.jpg" />
-                    <img src="phone/3.jpg" />
-                    <img src="phone/4.jpg" />
-                    <img src="phone/5.jpg" />
-                    <img src="phone/6.jpg" />
-                    <img src="phone/7.jpg" />
-                    <img src="phone/8.jpg" />
+                    <img src="phone/1.jpg" alt=""/>
+                    <img src="phone/2.jpg" alt=""/>
+                    <img src="phone/3.jpg" alt=""/>
+                    <img src="phone/4.jpg" alt=""/>
+                    <img src="phone/5.jpg" alt=""/>
+                    <img src="phone/6.jpg" alt=""/>
+                    <img src="phone/7.jpg" alt=""/>
+                    <img src="phone/8.jpg" alt=""/>
                   </p>
                   <div className="itemDiv">
-                    <Fashion />
+                    <h3>Fashion</h3>
                   </div>
                   <p className="images">
-                    <img src="fashion/1.jpg" />
-                    <img src="fashion/2.jpg" />
-                    <img src="fashion/3.jpg" />
-                    <img src="fashion/4.jpg" />
-                    <img src="fashion/5.jpg" />
-                    <img src="fashion/6.jpg" />
-                    <img src="fashion/7.jpg" />
-                    <img src="fashion/8.jpg" />
+                    <img src="Fashion/1.jpg" alt=""/>
+                    <img src="Fashion/2.jpg" alt=""/>
+                    <img src="Fashion/3.jpg" alt=""/>
+                    <img src="Fashion/4.jpg" alt=""/>
+                    <img src="Fashion/5.jpg" alt=""/>
+                    <img src="Fashion/6.jpg" alt=""/>
+                    <img src="Fashion/7.jpg" alt=""/>
+                    <img src="Fashion/8.jpg" alt=""/>
                   </p>
                   <div className="itemDiv">
-                    <Games />
+                    <h3>Games</h3>
                   </div>
                   <p className="images">
-                    <img src="gaming/1.jpg" />
-                    <img src="gaming/2.jpg" />
-                    <img src="gaming/3.jpg" />
-                    <img src="gaming/4.jpg" />
-                    <img src="gaming/5.jpg" />
-                    <img src="gaming/6.jpg" />
-                    <img src="gaming/7.jpg" />
-                    <img src="gaming/8.jpg" />
+                    <img src="gaming/1.jpg" alt=""/>
+                    <img src="gaming/2.jpg" alt=""/>
+                    <img src="gaming/3.jpg" alt=""/>
+                    <img src="gaming/4.jpg" alt=""/>
+                    <img src="gaming/5.jpg" alt=""/>
+                    <img src="gaming/6.jpg" alt=""/>
+                    <img src="gaming/7.jpg" alt=""/>
+                    <img src="gaming/8.jpg" alt=""/>
                   </p>
                 </div>
               </React.Fragment>
@@ -158,7 +159,8 @@ export class Index extends Component {
           <Route  path="/Games" component={Games} />
           <Route  path="/HomeAppliances" component={HomeAppliances} />
           <Route  path="/PhonesAndTablets" component={PhonesAndTablets} />
-          <Route  path="Fashion/" component={Fashion} />
+          <Route  path="/Fashion" component={Fashion} />
+          <Route  path="/Register" component={Register} />
           <Route  path="/Electronics" component={Electronics} />
           <Route  path="/Health" component={Health} />
         </div> 
