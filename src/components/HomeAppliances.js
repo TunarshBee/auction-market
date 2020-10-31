@@ -8,7 +8,7 @@ export class HomeAppliances extends Component {
                 <p className="images">
                     <img alt="" src="Home/a.jpg" />
                     <img alt="" src="Home/b.jpg" />
-                    <img alt="" src="Home/cc.jpg" />
+                    <img alt="" src="Home/c.jpg" />
                     <img alt="" src="Home/d.jpg" />
                     <img alt="" src="Home/e.jpg" />
                     <img alt="" src="Home/f.jpg" />

@@ -140,14 +140,14 @@ export class Index extends Component {
                     <h3>Games</h3>
                   </div>
                   <p className="images">
-                    <img src="gaming/1.jpg" alt=""/>
-                    <img src="gaming/2.jpg" alt=""/>
-                    <img src="gaming/3.jpg" alt=""/>
-                    <img src="gaming/4.jpg" alt=""/>
-                    <img src="gaming/5.jpg" alt=""/>
-                    <img src="gaming/6.jpg" alt=""/>
-                    <img src="gaming/7.jpg" alt=""/>
-                    <img src="gaming/8.jpg" alt=""/>
+                    <img src="Games/1.jpg" alt=""/>
+                    <img src="Games/2.jpg" alt=""/>
+                    <img src="Games/3.jpg" alt=""/>
+                    <img src="Games/4.jpg" alt=""/>
+                    <img src="Games/5.jpg" alt=""/>
+                    <img src="Games/6.jpg" alt=""/>
+                    <img src="Games/7.jpg" alt=""/>
+                    <img src="Games/8.jpg" alt=""/>
                   </p>
                 </div>
               </React.Fragment>

@@ -8,7 +8,7 @@ export class Sporting extends Component {
                 <p className="images">
                     <img alt="" src="Sporting/a.jpg" />
                     <img alt="" src="Sporting/b.jpg" />
-                    <img alt="" src="Sporting/cc.jpg" />
+                    <img alt="" src="Sporting/c.jpg" />
                     <img alt="" src="Sporting/d.jpg" />
                     <img alt="" src="Sporting/e.jpg" />
                     <img alt="" src="Sporting/f.jpg" />

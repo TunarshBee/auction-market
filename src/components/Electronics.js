@@ -10,7 +10,7 @@ export class Electronics extends Component {
                 <p className="images">
                     <img src="Electronics/a.jpg" />
                     <img src="Electronics/b.jpg" />
-                    <img src="Electronics/cc.jpg" />
+                    <img src="Electronics/c.jpg" />
                     <img src="Electronics/d.jpg" />
                     <img src="Electronics/e.jpg" />
                     <img src="Electronics/f.jpg" />
