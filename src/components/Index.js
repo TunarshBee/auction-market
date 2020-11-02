@@ -90,12 +90,12 @@ export class Index extends Component {
                   <p className="images">
                     <img src="mouse/cc.jpg" />
                     <img src="mouse/j.jpg" />
-                    <img src="mouse/a.jpg" />
+                    <img src="mouse/u.jpg" />
                     <img src="mouse/k.jpg" />
-                    <img src="mouse/1.jpg" />
+                    <img src="mouse/m.jpg" />
                     <img src="mouse/e.jpg" />
-                    <img src="mouse/b.jpg" />
-                    <img src="mouse/i.jpg" />
+                    <img src="mouse/v.jpg" />
+                    <img src="mouse/h.jpg" />
                   </p>
                   <div className="itemDiv">
                     <h3>Home Appliances</h3>
