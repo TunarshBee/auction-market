@@ -89,11 +89,12 @@ body{
 }
  .images{
   padding-left: 2%;
+  display: inline;
 }
  .images > img{
   width: 250px;
   height: 180px;
-  margin: 1%;
+  margin: 1% 0%;
 }
 .footer{
   background-color: #333;
