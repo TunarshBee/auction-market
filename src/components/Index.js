@@ -105,7 +105,7 @@ export class Index extends Component {
                     <h3>Computer Accessories</h3>
                   </div>
 
-                  {datas.object.computer.map((x) => (
+                  {datas.items.computer.map((x) => (
                     <p className="images">
                       <img key={x.id} alt={x.url} src={x.url} />
                     </p>
@@ -113,7 +113,7 @@ export class Index extends Component {
                   <div className="itemDiv">
                     <h3>Home Appliances</h3>
                   </div>
-                  {datas.object.home.map((x) => (
+                  {datas.items.home.map((x) => (
                     <p className="images">
                       <img key={x.id} alt={x.url} src={x.url} />
                     </p>
@@ -121,7 +121,7 @@ export class Index extends Component {
                   <div className="itemDiv">
                     <h3>Phones and Tablets</h3>
                   </div>
-                  {datas.object.phone.map((x) => (
+                  {datas.items.phone.map((x) => (
                     <p className="images">
                       <img key={x.id} alt={x.url} src={x.url} />
                     </p>
@@ -129,7 +129,7 @@ export class Index extends Component {
                   <div className="itemDiv">
                     <h3>Fashion</h3>
                   </div>
-                  {datas.object.fashion.map((x) => (
+                  {datas.items.fashion.map((x) => (
                     <p className="images">
                       <img key={x.id} alt={x.url} src={x.url} />
                     </p>
@@ -137,7 +137,7 @@ export class Index extends Component {
                   <div className="itemDiv">
                     <h3>Games</h3>
                   </div>
-                  {datas.object.games.map((x) => (
+                  {datas.items.games.map((x) => (
                     <p className="images">
                       <img key={x.id} alt={x.url} src={x.url} />
                     </p>
@@ -163,7 +163,6 @@ export class Index extends Component {
   }
 }
 let datas = require("../Data.json");
-console.log(datas.object.computer);
 const navLinks = {
   textDecoration: "none",
   color: "#fff",

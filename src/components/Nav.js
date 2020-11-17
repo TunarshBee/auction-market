@@ -1,13 +1,54 @@
 import React, { Component } from "react";
-import {
-  Route,
-  Link,
-  BrowserRouter as Router,
-  NavLink,
-} from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+let obj = require("../Data.json");
 
 export class Nav extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      datas: obj,
+      term: "",
+      searcher: null,
+    };
+    this.searchHandler = this.searchHandler.bind(this);
+    //this.itemFilter = this.itemFilter.bind(this);
+  }
+
+  searchHandler(event) {
+    this.setState({
+      searcher:[...this.state.datas.items.computer
+      .filter((x) => {
+        const exs = x.cart.toLowerCase();
+        return exs.indexOf(this.state.term.toLowerCase()) !== -1 || !this.state.term;
+      }).map((comp) => {
+        return (
+          <p className="images" key={comp.id}>
+            <img alt={comp.url} src={comp.url} />
+        {/* <p>{comp.cart}</p> */}
+          </p>
+        );
+      }),...this.state.datas.items.electronic
+      .filter((x) => {
+        const exs = x.cart.toLowerCase();
+        return exs.indexOf(this.state.term.toLowerCase()) !== -1 || !this.state.term;
+      }).map((comp) => {
+        return (
+          <p className="images" key={comp.id}>
+            <img alt={comp.url} src={comp.url} />
+        {/* <p>{comp.cart}</p> */}
+          </p>
+        );
+      })]
+      ,term: event.target.value 
+      });
+    console.log(event.target.value);
+  }
+
   render() {
+    const { term } = this.state;
+
     return (
       <div>
         <nav className="nav">
@@ -37,15 +78,28 @@ export class Nav extends Component {
               </NavLink>
             </li>
           </ul>
-          <form style={formStyle}>
-            <input type="search" placeholder="Search Your Favorite" />
-            <input type="submit" value="Search " />
+          <form style={formStyle} className="navSearch">
+            <input
+              type="text"
+              placeholder="Search Your Favorite"
+              value={term}
+              onChange={this.searchHandler}
+            />
+            <button type="submit">search</button>
           </form>
         </nav>
+        <div>
+          {this.state.searcher}
+        </div>
       </div>
     );
   }
 }
+// const itemFilter = this.state.datas.items.computer.filter((x) => {
+//   const exs = x.cart.toLowerCase();
+//   return exs.includes(this.state.term.toLowerCase());
+// });
+
 const navLinks = {
   textDecoration: "none",
   fontSize: "17px",
@@ -54,6 +108,7 @@ const navLinks = {
 };
 const thisStyle = {
   display: "flex",
+  marginTop: "1%",
   float: "right",
   //   width:"100%",
   marginRight: "7%",
