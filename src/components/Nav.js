@@ -13,37 +13,34 @@ export class Nav extends Component {
       searcher: null,
     };
     this.searchHandler = this.searchHandler.bind(this);
-    //this.itemFilter = this.itemFilter.bind(this);
   }
 
   searchHandler(event) {
     this.setState({
-      searcher:[...this.state.datas.items.computer
-      .filter((x) => {
-        const exs = x.cart.toLowerCase();
-        return exs.indexOf(this.state.term.toLowerCase()) !== -1 || !this.state.term;
-      }).map((comp) => {
-        return (
-          <p className="images" key={comp.id}>
-            <img alt={comp.url} src={comp.url} />
-        {/* <p>{comp.cart}</p> */}
-          </p>
-        );
-      }),...this.state.datas.items.electronic
-      .filter((x) => {
-        const exs = x.cart.toLowerCase();
-        return exs.indexOf(this.state.term.toLowerCase()) !== -1 || !this.state.term;
-      }).map((comp) => {
-        return (
-          <p className="images" key={comp.id}>
-            <img alt={comp.url} src={comp.url} />
-        {/* <p>{comp.cart}</p> */}
-          </p>
-        );
-      })]
-      ,term: event.target.value 
-      });
-    console.log(event.target.value);
+      searcher: [
+        this.state.datas.items.computer
+          .filter((x) => {
+            const exs = x.cart.toLowerCase();
+            return (
+              exs.indexOf(this.state.term.toLowerCase()) !== -1 ||
+              !this.state.term
+            );
+          })
+          .map((comp) => {
+            if (this.state.term === -1) {
+              return [];
+            }
+            return (
+              <p className="images" key={comp.id}>
+                <img alt={comp.url} src={comp.url} />
+                {/* <p>{comp.cart}</p> */}
+              </p>
+            );
+          }),
+      ],
+      term: event.currentTarget.value,
+    });
+    console.log(event.currentTarget.value);
   }
 
   render() {
@@ -88,17 +85,11 @@ export class Nav extends Component {
             <button type="submit">search</button>
           </form>
         </nav>
-        <div>
-          {this.state.searcher}
-        </div>
+        <div>{this.state.searcher}</div>
       </div>
     );
   }
 }
-// const itemFilter = this.state.datas.items.computer.filter((x) => {
-//   const exs = x.cart.toLowerCase();
-//   return exs.includes(this.state.term.toLowerCase());
-// });
 
 const navLinks = {
   textDecoration: "none",
@@ -118,5 +109,4 @@ const formStyle = {
   // clear:"both",
   marginTop: "1%",
 };
-
 export default Nav;
